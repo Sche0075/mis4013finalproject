@@ -21,11 +21,11 @@
             </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
+                      <li class="nav-item" style="font-size:20px;">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c1-coaches.php">Artist</a>
+                        <a class="nav-link" href="c1-coaches.php">Artists</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="c2-players.php">Albums</a>
@@ -43,7 +43,7 @@
                         <a class="nav-link" href="c5-coaches-with-players.php">Record Labels</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c5-coaches-with-players.php">User Playlists</a>
+                        <a class="nav-link" href="c5-coaches-with-players.php">Liked Playlist</a>
                       </li>
                 </ul>
               </div>
