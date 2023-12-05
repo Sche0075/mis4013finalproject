@@ -10,9 +10,7 @@
     <div classs="container">
        <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <img src="https://visualpharm.com/assets/744/Musical%20Notes-595b40b85ba036ed117da66f.svg" style="width:50px;height:50px;">
-              Music Data Base</a>
+            <a class="navbar-brand" href="#">Music Data Base</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
