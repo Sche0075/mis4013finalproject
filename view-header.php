@@ -20,13 +20,25 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c1-coaches.php">Coaches</a>
+                        <a class="nav-link" href="c1-coaches.php">Artist</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c2-players.php">Players</a>
+                        <a class="nav-link" href="c2-players.php">Albums</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c5-coaches-with-players.php">coaches-with-players</a>
+                        <a class="nav-link" href="c5-coaches-with-players.php">Genres</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="c5-coaches-with-players.php">Songs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="c5-coaches-with-players.php">Podcasts</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="c5-coaches-with-players.php">Record Labels</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="c5-coaches-with-players.php">User Playlists</a>
                       </li>
                 </ul>
               </div>
