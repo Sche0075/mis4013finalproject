@@ -37,9 +37,6 @@
                         <a class="nav-link" href="c5-coaches-with-players.php">Songs</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c5-coaches-with-players.php">Podcasts</a>
-                      </li>
-                      <li class="nav-item">
                         <a class="nav-link" href="c5-coaches-with-players.php">Record Labels</a>
                       </li>
                       <li class="nav-item">
