@@ -1,8 +1,8 @@
 <?php
 $pageTitle = "Home";
-include "a2-view-header.php";
+include "view-header.php";
 ?>
-      <h1>HomeWork 4</h1>
+      <h1>MIS 4013 Final Project</h1>
 <?php
-include "a3-view-footer.php";
+include "view-footer.php";
 ?>
