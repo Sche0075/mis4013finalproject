@@ -11,7 +11,7 @@
        <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
 
-            <div style="border-style:solid;border-color:black;border-width:2px;margin-right:10px;margin-left:10px;"">
+            <div style="border-style:solid;border-color:black;border-width:1px;margin-right:10px;margin-left:10px;"">
              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
                 <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
                 <path fill-rule="evenodd" d="M12 3v10h-1V3z"/>
