@@ -22,7 +22,7 @@
                                         
                                     <div class="mb-3">
                                       <label for="sLength<?php echo $song['song_id']; ?>" class="form-label">Song Length</label>
-                                      <input type="text" class="form-control" id="sLength<?php echo $song['song_id']; ?>" name="sLength" value="<?php echo $song['song_ceo']; ?>">
+                                      <input type="text" class="form-control" id="sLength<?php echo $song['song_id']; ?>" name="sLength" value="<?php echo $song['song_length']; ?>">
                                     </div>
                                                                     
                                 <input type="hidden" name="sid" value="<?php echo $song['song_id']; ?>">
