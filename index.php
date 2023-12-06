@@ -2,9 +2,11 @@
 $pageTitle = "Home";
 include "headfoot/view-header.php";
 ?>
-      <div>
-            <h1>Song DataBase</h1>
+
+      <div class="animate-me">
+        Song Data Base
       </div>
+      
 <?php
 include "headfoot/view-footer.php";
 ?>
