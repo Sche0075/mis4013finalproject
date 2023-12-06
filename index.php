@@ -2,10 +2,6 @@
 $pageTitle = "Home";
 include "headfoot/view-header.php";
 ?>
-
-      <div class="animate-me">
-        Song Data Base
-      </div>
 <script>
       import Letterize from "https://cdn.skypack.dev/letterizejs@2.0.0";
       const test = new Letterize({
@@ -35,6 +31,10 @@ include "headfoot/view-header.php";
                 letterSpacing: "6px"
               });
 </script>
+
+<div class="animate-me">
+        Song Data Base
+ </div>
       
 <?php
 include "headfoot/view-footer.php";
