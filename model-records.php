@@ -3,7 +3,7 @@
 function selectRecords() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT record_id, record_name, record_ceo, FROM `record`");
+        $stmt = $conn->prepare("SELECT record_id, record_name, record_ceo FROM `record`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
