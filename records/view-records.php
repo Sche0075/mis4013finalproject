@@ -51,7 +51,7 @@
                 <td>
                       <form method="post" action="c4-team-by-player.php">
                         <input type="hidden" name="tid" value="<?php echo $record['record_id']; ?>">
-                        <button type="submit" class="btn btn-link">Fill this in Later</button>
+                        <button type="submit" class="btn btn-primary">View Signed Artists</button>
                       </form>
                 </td>
               
