@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col">
-      <h1>Players</h1>
+      <h1>Record Labels</h1>
   </div>
   <div class="col-auto">
 <?php
-    include "n2-newform-players.php";
+    include "newform-records.php";
 ?>
   </div>
 </div>
@@ -15,8 +15,7 @@
       <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>Position</th>
-        <th>Age</th>
+        <th>CEO</th>
         <th></th>
         <th></th>
         <th></th>
@@ -26,7 +25,7 @@
       
       <tbody>
         <?php
-          while ($player = $players->fetch_assoc()) {
+          while ($record = $players->fetch_assoc()) {
         ?>
             <tr>
 
