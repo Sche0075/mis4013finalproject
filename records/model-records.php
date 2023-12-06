@@ -3,7 +3,7 @@
 function selectRecords() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT player_id, player_name, player_position, player_age FROM `player`");
+        $stmt = $conn->prepare("SELECT record_id, record_name, record_ceo, FROM `record`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -14,11 +14,11 @@ function selectRecords() {
     }
 }
 
-function insertRecords($pName, $pPosition, $pAge) {
+function insertRecords($rName, $rCeo) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `player` (`player_name`, `player_position`, `player_age`) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $pName, $pPosition, $pAge);
+        $stmt = $conn->prepare("INSERT INTO `record` (`record_name`, `record_ceo`) VALUES (?, ?, ?)");
+        $stmt->bind_param("ss", $rName, $rCeo);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -28,11 +28,11 @@ function insertRecords($pName, $pPosition, $pAge) {
     }
 }
 
-function updateRecords($pName, $pPosition, $pAge, $pid) {
+function updateRecords($rName, $rCeo, $rid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `player` set `player_name` = ?, `player_position` = ?, `player_age` = ? where player_id = ?");
-        $stmt->bind_param("sssi", $pName, $pPosition, $pAge, $pid);
+        $stmt = $conn->prepare("update `record` set `record_name` = ?, `record_ceo` = ? where record_id = ?");
+        $stmt->bind_param("ssi", $rName, $rCeo, $rid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -42,11 +42,11 @@ function updateRecords($pName, $pPosition, $pAge, $pid) {
     }
 }
 
-function deleteRecords($pid) {
+function deleteRecords($rid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from player where player_id = ?");
-        $stmt->bind_param("i", $pid);
+        $stmt = $conn->prepare("delete from record where record_id = ?");
+        $stmt->bind_param("i", $rid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
