@@ -17,7 +17,7 @@ function selectRecords() {
 function insertRecords($rName, $rCeo) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `record` (`record_name`, `record_ceo`) VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `record` (`record_name`, `record_ceo`) VALUES (?, ?)");
         $stmt->bind_param("ss", $rName, $rCeo);
         $success = $stmt->execute();
         $conn->close();
