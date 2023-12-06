@@ -1,9 +1,9 @@
 <?php
 
-function selectRecords() {
+function selectSongs() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT record_id, record_name, record_ceo FROM `record`");
+        $stmt = $conn->prepare("SELECT song_id, song_name, song_length FROM `song`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -14,11 +14,11 @@ function selectRecords() {
     }
 }
 
-function insertRecords($rName, $rCeo) {
+function insertSongs($sName, $sLength) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `record` (`record_name`, `record_ceo`) VALUES (?, ?)");
-        $stmt->bind_param("ss", $rName, $rCeo);
+        $stmt = $conn->prepare("INSERT INTO `song` (`song_name`, `song_length`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $sName, $sLength);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -28,11 +28,11 @@ function insertRecords($rName, $rCeo) {
     }
 }
 
-function updateRecords($rName, $rCeo, $rid) {
+function updateSongs($sName, $sLength, $sid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `record` set `record_name` = ?, `record_ceo` = ? where record_id = ?");
-        $stmt->bind_param("ssi", $rName, $rCeo, $rid);
+        $stmt = $conn->prepare("update `song` set `song_name` = ?, `song_length` = ? where song_id = ?");
+        $stmt->bind_param("ssi", $sName, $sLength, $sid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -42,11 +42,11 @@ function updateRecords($rName, $rCeo, $rid) {
     }
 }
 
-function deleteRecords($rid) {
+function deleteSongs($sid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from record where record_id = ?");
-        $stmt->bind_param("i", $rid);
+        $stmt = $conn->prepare("delete from song where song_id = ?");
+        $stmt->bind_param("i", $sid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
