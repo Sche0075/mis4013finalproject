@@ -22,7 +22,7 @@
                                         
                                     <div class="mb-3">
                                       <label for="gDescription<?php echo $genre['genre_id']; ?>" class="form-label">Genre Description</label>
-                                      <input type="text" class="form-control" id="gDescription<?php echo $genre['genre_id']; ?>" name="gDescription" value="<?php echo $genre['genre_length']; ?>">
+                                      <input type="text" class="form-control" id="gDescription<?php echo $genre['genre_id']; ?>" name="gDescription" value="<?php echo $genre['genre_description']; ?>">
                                     </div>
                                                                     
                                 <input type="hidden" name="gid" value="<?php echo $genre['genre_id']; ?>">
