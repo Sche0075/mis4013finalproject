@@ -25,22 +25,22 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c1-coaches.php">Artists</a>
+                        <a class="nav-link" href="1-artists.php">Artists</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="albums.php">Albums</a>
+                        <a class="nav-link" href="2-albums-with-songs.php">Albums</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="genres.php">Genres</a>
+                        <a class="nav-link" href="3-genres.php">Genres</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="songs.php">Songs</a>
+                        <a class="nav-link" href="4-songs.php">Songs</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="5-records.php">Record Labels</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="likedplaylist.php">Liked Playlist</a>
+                        <a class="nav-link" href="6-likedplaylist.php">Liked Playlist</a>
                       </li>
                 </ul>
               </div>
