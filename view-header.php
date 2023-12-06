@@ -28,19 +28,19 @@
                         <a class="nav-link" href="c1-coaches.php">Artists</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c2-players.php">Albums</a>
+                        <a class="nav-link" href="albums.php">Albums</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c5-coaches-with-players.php">Genres</a>
+                        <a class="nav-link" href="genres.php">Genres</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c5-coaches-with-players.php">Songs</a>
+                        <a class="nav-link" href="songs.php">Songs</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c5-coaches-with-players.php">Record Labels</a>
+                        <a class="nav-link" href="recordlabels.php">Record Labels</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="c5-coaches-with-players.php">Liked Playlist</a>
+                        <a class="nav-link" href="likedplaylist.php">Liked Playlist</a>
                       </li>
                 </ul>
               </div>
