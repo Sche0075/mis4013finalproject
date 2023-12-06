@@ -3,7 +3,7 @@ $pageTitle = "Home";
 include "headfoot/view-header.php";
 ?>
 
-<div style="width:500px;margin-left:auto;margin-right:auto;">
+<div style="width:400px;margin-left:auto;margin-right:auto;">
         <h1>Song Data Base</h1>
 </div>
       
