@@ -34,7 +34,7 @@ if (isset($_POST['actionType'])) {
   }  
 }
 
-$songs = selectSongs();
+$genres = selectGenres();
 include "genres/view-genres.php";
 include "headfoot/view-footer.php";
 ?>
