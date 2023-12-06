@@ -25,20 +25,19 @@
       
       <tbody>
         <?php
-          while ($record = $players->fetch_assoc()) {
+          while ($record = $records->fetch_assoc()) {
         ?>
             <tr>
 
-                <td><?php echo $player['player_id']; ?></td>
-                <td><?php echo $player['player_name']; ?></td> 
-                <td><?php echo $player['player_position']; ?></td>
-                <td><?php echo $player['player_age']; ?></td>
+                <td><?php echo $record['record_id']; ?></td>
+                <td><?php echo $record['record_name']; ?></td> 
+                <td><?php echo $record['record_ceo']; ?></td>
                 <td><?php
-                     include "n2-editform-players.php";
+                     include "editform-records.php";
                      ?></td>
                    <td>
                     <form method="post" action="">
-                        <input type="hidden" name="pid" value="<?php echo $player['player_id']; ?>">
+                        <input type="hidden" name="rid" value="<?php echo $record['record_id']; ?>">
                         <input type="hidden" name="actionType" value="Delete">
                         <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
@@ -50,8 +49,8 @@
               
                 <td>
                       <form method="post" action="c4-team-by-player.php">
-                        <input type="hidden" name="tid" value="<?php echo $player['player_id']; ?>">
-                        <button type="submit" class="btn btn-primary">Team/Practice Time</button>
+                        <input type="hidden" name="tid" value="<?php echo $record['record_id']; ?>">
+                        <button type="submit" class="btn btn-primary">Fill this in Later</button>
                       </form>
                 </td>
               
