@@ -37,7 +37,7 @@
                         <a class="nav-link" href="songs.php">Songs</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="records.php">Record Labels</a>
+                        <a class="nav-link" href="5-records.php">Record Labels</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="likedplaylist.php">Liked Playlist</a>
