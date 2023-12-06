@@ -35,6 +35,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $songs = selectSongs();
-include "records/view-songs.php";
+include "songs/view-songs.php";
 include "headfoot/view-footer.php";
 ?>
