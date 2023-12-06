@@ -8,24 +8,24 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-     if (insertPlayers($_POST['pName'], $_POST['pPosition'], $_POST['pAge'])) {
-       echo '<div class="alert alert-success" role="alert">Player added.</div>';
+     if (insertRecords($_POST['rName'], $_POST['rCeo'])) {
+       echo '<div class="alert alert-success" role="alert">Record Label added.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
         break;    
 
     case "Edit":
-     if (updatePlayers($_POST['pName'], $_POST['pPosition'], $_POST['pAge'], $_POST['pid'])) {
-       echo '<div class="alert alert-success" role="alert">Record edited.</div>';
+     if (updateRecords($_POST['rName'], $_POST['rCeo'], $_POST['rid'])) {
+       echo '<div class="alert alert-success" role="alert">Record Label edited.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
         break;    
    
     case "Delete":
-     if (deletePlayers($_POST['pid'])) {
-       echo '<div class="alert alert-success" role="alert">Player deleted.</div>';
+     if (deleteRecords($_POST['rid'])) {
+       echo '<div class="alert alert-success" role="alert">Record Label deleted.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
@@ -34,7 +34,7 @@ if (isset($_POST['actionType'])) {
   }  
 }
 
-$players = selectPlayers();
+$records = selectRecords();
 include "view-records.php";
 include "view-footer.php";
 ?>
