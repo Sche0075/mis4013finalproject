@@ -49,7 +49,7 @@
                 </td>
               
                 <td>
-                      <form method="post" action="artists-by-records.php">
+                      <form method="post" action="5-artists-by-records.php">
                         <input type="hidden" name="arbid" value="<?php echo $record['record_id']; ?>">
                         <button type="submit" class="btn btn-primary">View Signed Artists</button>
                       </form>
