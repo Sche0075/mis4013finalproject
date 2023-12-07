@@ -6,7 +6,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="editGenreModal<?php echo $genre['genre_id']; ?>" tabindex="-1" aria-labelledby="editSongModalLabel<?php echo $genre['genre_id']; ?>" aria-hidden="true">
+<div class="modal fade" id="editGenreModal<?php echo $genre['genre_id']; ?>" tabindex="-1" aria-labelledby="editGenreModalLabel<?php echo $genre['genre_id']; ?>" aria-hidden="true">
    <div class="modal-dialog">
         <div class="modal-content">
               <div class="modal-header">
