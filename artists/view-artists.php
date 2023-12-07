@@ -32,8 +32,8 @@
                 <td><?php echo $artist['artist_id']; ?></td>
                 <td><?php echo $artist['artist_name']; ?></td> 
                 <td><?php echo $artist['artist_hometown']; ?></td>
-                <td><?php echo $artist['artist_hometown']; ?></td>
-                <td><?php echo $artist['artist_hometown']; ?></td>
+                <td><?php echo $artist['record_name']; ?></td>
+                <td><?php echo $artist['genre_name']; ?></td>
                 <td><?php
                      include "editform-artists.php";
                      ?></td>
