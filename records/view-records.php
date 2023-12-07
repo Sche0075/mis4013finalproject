@@ -49,8 +49,8 @@
                 </td>
               
                 <td>
-                      <form method="post" action="c4-team-by-player.php">
-                        <input type="hidden" name="tid" value="<?php echo $record['record_id']; ?>">
+                      <form method="post" action="artists-by-records.php">
+                        <input type="hidden" name="arbid" value="<?php echo $record['record_id']; ?>">
                         <button type="submit" class="btn btn-primary">View Signed Artists</button>
                       </form>
                 </td>
