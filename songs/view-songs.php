@@ -14,8 +14,8 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Song Name</th>
-        <th>Length</th>
+        <th>Song Name:</th>
+        <th>Song Length:</th>
         <th></th>
         <th></th>
         <th></th>
