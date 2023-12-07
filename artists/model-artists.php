@@ -3,7 +3,7 @@
 function selectArtists() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT artist_id, artist_name, artist_description FROM `artist`");
+        $stmt = $conn->prepare("SELECT artist_id, artist_name, artist_hometown FROM `artist`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
