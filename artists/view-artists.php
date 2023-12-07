@@ -31,7 +31,7 @@
 
                 <td><?php echo $artist['artist_id']; ?></td>
                 <td><?php echo $artist['artist_name']; ?></td> 
-                <td><?php echo $artist['artist_description']; ?></td>
+                <td><?php echo $artist['artist_hometown']; ?></td>
                 <td><?php
                      include "editform-artists.php";
                      ?></td>
