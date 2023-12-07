@@ -14,8 +14,8 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Name</th>
-        <th>CEO</th>
+        <th>Record Label:</th>
+        <th>Record Label CEO:</th>
         <th></th>
         <th></th>
         <th></th>
