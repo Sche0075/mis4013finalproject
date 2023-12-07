@@ -19,11 +19,11 @@
         ?>
             <tr>
 
-                <td><?php echo $abr['a.artist_id']; ?></td>
-                <td><?php echo $abr['a.atrist_name']; ?></td> 
-                <td><?php echo $abr['a.artist_hometown']; ?></td>
-                <td><?php echo $abr['r.record_name']; ?></td>
-                <td><?php echo $abr['g.genre_name']; ?></td>
+                <td><?php echo $abr['artist_id']; ?></td>
+                <td><?php echo $abr['artist_name']; ?></td> 
+                <td><?php echo $abr['artist_hometown']; ?></td>
+                <td><?php echo $abr['record_name']; ?></td>
+                <td><?php echo $abr['genre_name']; ?></td>
                               
             </tr>
 
