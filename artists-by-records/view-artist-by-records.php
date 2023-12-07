@@ -5,9 +5,10 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Name</th>
-        <th>Genre</th>
+        <th>Artist Name:</th>
         <th>HomeTown:</th>
+        <th>Record Label:</th>
+        <th>Genre:</th>        
         
       </tr>
     </thead>
