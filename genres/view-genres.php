@@ -49,8 +49,8 @@
                 </td>
               
                 <td>
-                      <form method="post" action="c4-team-by-player.php">
-                        <input type="hidden" name="tid" value="<?php echo $genre['genre_id']; ?>">
+                      <form method="post" action="3-artists-by-genres.php">
+                        <input type="hidden" name="abgid" value="<?php echo $genre['genre_id']; ?>">
                         <button type="submit" class="btn btn-primary">Genre Artists</button>
                       </form>
                 </td>
