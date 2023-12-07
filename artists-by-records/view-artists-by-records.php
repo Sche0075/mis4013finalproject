@@ -1,4 +1,5 @@
 <h1>Record Label Artists</h1>
+<h3>(To edit these you must return to the arist tab)</h3>
 <div class="table-responsive">
   <table class="table">
     
