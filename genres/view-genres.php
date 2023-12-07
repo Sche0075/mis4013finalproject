@@ -14,8 +14,8 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Genre Name</th>
-        <th>Description</th>
+        <th>Genre Name:</th>
+        <th>Genre Description:</th>
         <th></th>
         <th></th>
         <th></th>
