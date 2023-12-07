@@ -5,7 +5,7 @@ require_once("artists-by-records/model-artists-by-records.php");
 $pageTitle = "Record Label Artists";
 ?>
 To edit these you must be on the artist tab
-<?php>
+<?php
 include "headfoot/view-header.php";
 
 $artistsbyrecords = selectArtistsByRecords($_POST['abrid']);
