@@ -1,4 +1,4 @@
-<h1>Team by Player</h1>
+<h1>Record Label Artist</h1>
 <div class="table-responsive">
   <table class="table">
     
@@ -6,17 +6,15 @@
       <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>Position</th>
-        <th>Age</th>
-        <th>Level</th>
-        <th>Practice Time</th>
+        <th>Genre</th>
+        <th>HomeTown:</th>
         
       </tr>
     </thead>
       
       <tbody>
         <?php
-          while ($team = $teams->fetch_assoc()) {
+          while ($artistsbyrecords = $teams->fetch_assoc()) {
         ?>
             <tr>
 
