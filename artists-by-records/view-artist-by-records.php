@@ -14,17 +14,15 @@
       
       <tbody>
         <?php
-          while ($artistsbyrecords = $teams->fetch_assoc()) {
+          while ($abr = $artistbyrecords->fetch_assoc()) {
         ?>
             <tr>
 
-                <td><?php echo $team['player_id']; ?></td>
-                <td><?php echo $team['player_name']; ?></td> 
-                <td><?php echo $team['player_position']; ?></td>
-                <td><?php echo $team['player_age']; ?></td>
-                <td><?php echo $team['level']; ?></td>
-                <td><?php echo $team['practice_time']; ?></td>
-              
+                <td><?php echo $abr['artist_id']; ?></td>
+                <td><?php echo $abr['atrist_name']; ?></td> 
+                <td><?php echo $abr['genre_name']; ?></td>
+                <td><?php echo $abr['artist_hometown']; ?></td>
+                              
             </tr>
 
         <?php
