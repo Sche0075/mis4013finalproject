@@ -15,7 +15,7 @@
       
       <tbody>
         <?php
-          while ($abr = $artistbyrecords->fetch_assoc()) {
+          while ($abr = $artistsbyrecords->fetch_assoc()) {
         ?>
             <tr>
 
