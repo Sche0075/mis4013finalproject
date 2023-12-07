@@ -6,26 +6,26 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="editArtistsModal<?php echo $artist['artist_id']; ?>" tabindex="-1" aria-labelledby="editSongModalLabel<?php echo $genre['genre_id']; ?>" aria-hidden="true">
+<div class="modal fade" id="editArtistModal<?php echo $artist['artist_id']; ?>" tabindex="-1" aria-labelledby="editArtistModalLabel<?php echo $artist['artist_id']; ?>" aria-hidden="true">
    <div class="modal-dialog">
         <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="editGenreModalLabel<?php echo $genre['genre_id']; ?>">Edit Genre</h1>
+                <h1 class="modal-title fs-5" id="editArtistModalLabel<?php echo $artist['artist_id']; ?>">Edit Artist</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
                   <div class="modal-body">
                           <form method="post" action="">
                                     <div class="mb-3">
-                                      <label for="gName<?php echo $genre['genre_id']; ?>" class="form-label">Genre Name</label>
-                                      <input type="text" class="form-control" id="gName<?php echo $genre['genre_id']; ?>" name="gName" value="<?php echo $genre['genre_name']; ?>">
+                                      <label for="aName<?php echo $artist['artist_id']; ?>" class="form-label">Artist Name</label>
+                                      <input type="text" class="form-control" id="aName<?php echo $artist['artist_id']; ?>" name="aName" value="<?php echo $artist['artist_name']; ?>">
                                     </div>
                                         
                                     <div class="mb-3">
-                                      <label for="gDescription<?php echo $genre['genre_id']; ?>" class="form-label">Genre Description</label>
-                                      <input type="text" class="form-control" id="gDescription<?php echo $genre['genre_id']; ?>" name="gDescription" value="<?php echo $genre['genre_description']; ?>">
+                                      <label for="aHometown<?php echo $artist['artist_id']; ?>" class="form-label">Atrist Hometown</label>
+                                      <input type="text" class="form-control" id="aHometown<?php echo $artist['artist_id']; ?>" name="aHometown" value="<?php echo $artist['artist_hometown']; ?>">
                                     </div>
                                                                     
-                                <input type="hidden" name="gid" value="<?php echo $genre['genre_id']; ?>">
+                                <input type="hidden" name="aid" value="<?php echo $artist['artist_id']; ?>">
                                 <input type="hidden" name="actionType" value="Edit">
                               <button type="submit" class="btn btn-primary">Save</button>
                           </form> 
