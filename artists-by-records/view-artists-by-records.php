@@ -1,4 +1,4 @@
-<h1>Record Label Artist</h1>
+<h1>Record Label Artists</h1>
 <div class="table-responsive">
   <table class="table">
     
