@@ -19,28 +19,28 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size:20px;font-color:white">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size:20px;">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item" style="font-weight:bold;">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/" style="color: white;">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="1-artists.php">Artists</a>
+                        <a class="nav-link" href="1-artists.php" style="color: white;">Artists</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="2-albums-with-songs.php">Albums</a>
+                        <a class="nav-link" href="2-albums-with-songs.php" style="color: white;">Albums</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="3-genres.php">Genres</a>
+                        <a class="nav-link" href="3-genres.php" style="color: white;">Genres</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="4-songs.php">Songs</a>
+                        <a class="nav-link" href="4-songs.php" style="color: white;">Songs</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="5-records.php">Record Labels</a>
+                        <a class="nav-link" href="5-records.php" style="color: white;">Record Labels</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="6-likedplaylist.php">Favorite Songs</a>
+                        <a class="nav-link" href="6-likedplaylist.php" style="color: white;">Favorite Songs</a>
                       </li>
                 </ul>
               </div>
