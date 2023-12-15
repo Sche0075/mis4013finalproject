@@ -1,12 +1,12 @@
-<h1>Artist's Albums</h1>
-<h5>(To edit these you must return to the Albums tab)</h5>
+<h1>Songs in Album</h1>
+<h5>(To edit these you must return to the Songs tab)</h5>
 <div class="table-responsive">
   <table class="table">
     
     <thead>
       <tr>
         <th>ID</th>
-        <th>Album Name:</th>
+        <th>Song Name:</th>
         <th>Genre:</th>
         <th>Album Name:</th>
         <th>Album Year:</th>
