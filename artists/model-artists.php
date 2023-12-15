@@ -31,7 +31,7 @@ function insertArtists($rid, $gid, $aName, $aHometown) {
 function updateArtists($rid, $gid, $aName, $aHometown, $aid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `artist` set `record_name` = ?, `genre_id` = ?, `artist_name` = ?, `artist_hometown` = ? where artist_id = ?");
+        $stmt = $conn->prepare("update `artist` set `record_id` = ?, `genre_id` = ?, `artist_name` = ?, `artist_hometown` = ? where artist_id = ?");
         $stmt->bind_param("iissi", $rid, $gid, $aName, $aHometown, $aid);
         $success = $stmt->execute();
         $conn->close();
