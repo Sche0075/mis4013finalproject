@@ -6,24 +6,24 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Artist Name:</th>
-        <th>HomeTown:</th>
-        <th>Record Label:</th>
+        <th>Album Name:</th>
         <th>Genre:</th>
+        <th>Album Name:</th>
+        <th>Album Year:</th>
       </tr>
     </thead>
       
       <tbody>
         <?php
-          while ($abg = $artistsbygenres->fetch_assoc()) {
+          while ($aba = $albumsbyartists->fetch_assoc()) {
         ?>
             <tr>
 
-                <td><?php echo $abg['artist_id']; ?></td>
-                <td><?php echo $abg['artist_name']; ?></td> 
-                <td><?php echo $abg['artist_hometown']; ?></td>
-                <td><?php echo $abg['record_name']; ?></td>
-                <td><?php echo $abg['genre_name']; ?></td>
+                <td><?php echo $aba['album_id']; ?></td>
+                <td><?php echo $aba['artist_name']; ?></td> 
+                <td><?php echo $aba['genre_name']; ?></td>
+                <td><?php echo $aba['album_name']; ?></td>
+                <td><?php echo $aba['album_year']; ?></td>
                               
             </tr>
 
