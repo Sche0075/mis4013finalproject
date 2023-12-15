@@ -2,7 +2,7 @@
 require_once("util-db.php");
 require_once("albums/model-albums.php");
 
-$pageTitle = "Artists";
+$pageTitle = "Albums";
 include "headfoot/view-header.php";
 
 if (isset($_POST['actionType'])) {
