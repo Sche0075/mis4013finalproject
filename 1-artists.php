@@ -8,7 +8,7 @@ include "headfoot/view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-     if (insertGenres($_POST['rid'] ,$_POST['gid'], $_POST['aName'], $_POST['aHometown'])) {
+     if (insertArtists($_POST['rid'] ,$_POST['gid'], $_POST['aName'], $_POST['aHometown'])) {
        echo '<div class="alert alert-success" role="alert">Artist added.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
@@ -16,7 +16,7 @@ if (isset($_POST['actionType'])) {
         break;    
 
     case "Edit":
-     if (updateGenres($_POST['aName'], $_POST['gHometown'], $_POST['aid'])) {
+     if (updateArtists($_POST['aName'], $_POST['gHometown'], $_POST['aid'])) {
        echo '<div class="alert alert-success" role="alert">Artist edited.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
@@ -24,7 +24,7 @@ if (isset($_POST['actionType'])) {
         break;    
    
     case "Delete":
-     if (deleteGenres($_POST['aid'])) {
+     if (deleteArtists($_POST['aid'])) {
        echo '<div class="alert alert-success" role="alert">Artist deleted.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
