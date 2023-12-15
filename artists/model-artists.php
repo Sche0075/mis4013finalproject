@@ -14,11 +14,11 @@ function selectArtists() {
     }
 }
 
-function insertArtists($aName, $aHometown, $rid, $gid) {
+function insertArtists($rid, $gid, $aName, $aHometown) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `artist` (`artist_name`, `artist_hometown`, `record_id`, `genre_id`,) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssii", $aName, $aHometown, $gid, $rid);
+        $stmt = $conn->prepare("INSERT INTO `artist` (`record_id`, `genre_id`, `artist_name`, `artist_hometown`) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("iiss", $aName, $aHometown, $gid, $rid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
