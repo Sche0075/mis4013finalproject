@@ -14,6 +14,21 @@ function selectArtists() {
     }
 }
 
+function selectRecordsforInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT  r.record_name, g.genre_name FROM record r JOIN artist a ON a.record_id = r.record_id JOIN genre g ON g.genre_id = a.genre_id");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
 function insertArtists($rid, $gid, $aName, $aHometown) {
     try {
         $conn = get_db_connection();
