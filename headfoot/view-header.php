@@ -28,7 +28,7 @@
                         <a class="nav-link" href="1-artists.php" style="color: white;">Artists</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="2-albums-with-songs.php" style="color: white;">Albums</a>
+                        <a class="nav-link" href="2-albums.php" style="color: white;">Albums</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="3-genres.php" style="color: white;">Genres</a>
