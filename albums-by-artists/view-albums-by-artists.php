@@ -19,11 +19,11 @@
         ?>
             <tr>
 
-                <td><?php echo $aba['album_id']; ?></td>
-                <td><?php echo $aba['artist_name']; ?></td> 
-                <td><?php echo $aba['genre_name']; ?></td>
-                <td><?php echo $aba['album_name']; ?></td>
-                <td><?php echo $aba['album_year']; ?></td>
+                <td><?php echo $abaid['album_id']; ?></td>
+                <td><?php echo $abaid['artist_name']; ?></td> 
+                <td><?php echo $abaid['genre_name']; ?></td>
+                <td><?php echo $abaid['album_name']; ?></td>
+                <td><?php echo $abaid['album_year']; ?></td>
                               
             </tr>
 
