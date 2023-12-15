@@ -18,9 +18,32 @@
               </div>
                   <div class="modal-body">
                           <form method="post" action="">
+                            
+                                    <div class="mb-3">
+                                      <label for="rid" class="form-label">Record Label</label>
+
+                                      <?php
+                                      $recordsList = selectRecordsforInput();
+                                      $selectedRecord = 0;
+                                      include "dropdowns/view-records-input-list.php";
+                                      ?>
+
+                                    </div>
+                            
+                                    <div class="mb-3">
+                                      <label for="gid" class="form-label">Genre of Music</label>
+
+                                      <?php
+                                      $genresList = selectGenresforInput();
+                                      $selectedRecord = 0;
+                                      include "dropdowns/view-genres-input-list.php";
+                                      ?>
+
+                                    </div>
+                                    
                                     <div class="mb-3">
                                       <label for="aName" class="form-label">Artist Name</label>
-                                      <input type="text" class="form-control" id="gName" name="gName">
+                                      <input type="text" class="form-control" id="aName" name="aName">
                                     </div>
                                         
                                     <div class="mb-3">
