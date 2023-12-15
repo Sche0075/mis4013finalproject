@@ -18,12 +18,12 @@
                                 
                                     <div class="mb-3">
                                       <label for="rid<?php echo $artist['artist_id']; ?>" class="form-label">Record Label:</label>
-                                      <input type="text" class="form-control" id="rid<?php echo $artist['artist_id']; ?>" name="rid" value="<?php echo $artist['artist_name']; ?>">
+                                      <input type="text" class="form-control" id="rid<?php echo $artist['artist_id']; ?>" name="rid" value="<?php echo $artist['rid']; ?>">
                                     </div>
                                 
                                     <div class="mb-3">
                                       <label for="gid<?php echo $artist['artist_id']; ?>" class="form-label">Genre:</label>
-                                      <input type="text" class="form-control" id="gid<?php echo $artist['artist_id']; ?>" name="gid" value="<?php echo $artist['artist_name']; ?>">
+                                      <input type="text" class="form-control" id="gid<?php echo $artist['artist_id']; ?>" name="gid" value="<?php echo $artist['gid']; ?>">
                                     </div>                                    
                                 
                                     <div class="mb-3">
