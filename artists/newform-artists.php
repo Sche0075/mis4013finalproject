@@ -33,7 +33,7 @@
                                       <label for="gid" class="form-label">Genre of Music</label>
 
                                       <?php
-                                      $recordsList = selectGenresforInput();
+                                      $genresList = selectGenresforInput();
                                       include "dropdowns/view-genres-input-list.php";
                                       ?>
 
