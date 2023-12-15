@@ -17,7 +17,7 @@ if (isset($_POST['actionType'])) {
 
     case "Edit":
      if (updateAlbums($_POST['aid'] ,$_POST['gid'], $_POST['alName'], $_POST['alYear'], $_POST['alid'])) {
-       echo '<div class="alert alert-success" role="alert">Artist edited.</div>';
+       echo '<div class="alert alert-success" role="alert">Album edited.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
