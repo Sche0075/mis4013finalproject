@@ -31,7 +31,12 @@
                             
                                     <div class="mb-3">
                                       <label for="gid" class="form-label">Genre of Music</label>
-                                      <input type="text" class="form-control" id="gid" name="gid">
+
+                                      <?php
+                                      $recordsList = selectGenresforInput();
+                                      include "dropdowns/view-genres-input-list.php";
+                                      ?>
+
                                     </div>
                                     
                                     <div class="mb-3">
