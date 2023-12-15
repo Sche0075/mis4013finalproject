@@ -7,7 +7,7 @@ include "headfoot/view-header.php";
         <h1>Song Data Base</h1>
 </div>
 
-<div style="width:300px;margin-left:auto;margin-right:auto;margin-top:50px;">
+<div style="width:450px;margin-left:auto;margin-right:auto;margin-top:50px;">
         <h4>By Huston Bryan and Jameson Scheetz</h4
 </div>
 
