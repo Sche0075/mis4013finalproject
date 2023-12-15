@@ -31,7 +31,7 @@ function selectRecordsforInput() {
 function selectGenresforInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT genre_id, genre_name FROM `record` order by genre_name");
+        $stmt = $conn->prepare("SELECT genre_id, genre_name FROM `genre` order by genre_name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
