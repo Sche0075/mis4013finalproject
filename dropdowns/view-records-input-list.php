@@ -2,9 +2,11 @@
 <?php
 while ($recordsItem = $recordsList->fetch_assoc()) {
   $selText = "";
-  if($selectedRecord
+  if($selectedRecord == $recordsItem['record_id']) {
+    $selText = " selected";
+  }
 ?>
-  <option value="<?php echo $recordsItem['record_id']; ?>"><?php echo $recordsItem['record_name']; ?></option>
+  <option value="<?php echo $recordsItem['record_id']; ?>"<?=$selText?>><?php echo $recordsItem['record_name']; ?></option>
 <?php
 }
 ?>
