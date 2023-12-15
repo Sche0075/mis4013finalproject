@@ -8,7 +8,7 @@ include "headfoot/view-header.php";
 </div>
 
 <div style="width:450px;margin-left:auto;margin-right:auto;margin-top:50px;">
-        <h4>By Huston Bryan and Jameson Scheetz</h4
+        <h4>By Jameson Scheetz and Huston Bryan</h4
 </div>
 
 <head>
