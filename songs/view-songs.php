@@ -16,8 +16,9 @@
         <th>ID</th>
         <th>Song Name:</th>
         <th>Song Length:</th>
-        <th></th>
-        <th></th>
+        <th>Artist:</th>
+        <th>Album:</th>
+        <th>Genre:</th>
         <th></th>
         <th></th>
       </tr>
@@ -32,6 +33,9 @@
                 <td><?php echo $song['song_id']; ?></td>
                 <td><?php echo $song['song_name']; ?></td> 
                 <td><?php echo $song['song_length']; ?></td>
+                <td><?php echo $song['artist_name']; ?></td>
+                <td><?php echo $song['album_name']; ?></td>
+                <td><?php echo $song['genre_name']; ?></td>
                 <td><?php
                      include "editform-songs.php";
                      ?></td>
@@ -49,9 +53,9 @@
                 </td>
               
                 <td>
-                      <form method="post" action="c4-team-by-player.php">
-                        <input type="hidden" name="tid" value="<?php echo $song['song_id']; ?>">
-                        <button type="submit" class="btn btn-primary">Empty Button</button>
+                      <form method="post" action="2-songs-by-albums.php">
+                        <input type="hidden" name="sbalid" value="<?php echo $album['album_id']; ?>">
+                        <button type="submit" class="btn btn-primary">Songs</button>
                       </form>
                 </td>
               
@@ -63,3 +67,15 @@
       </tbody>
   </table>
 </div>
+
+<head>
+<style>
+body {  
+  background-image: url(imageex.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
