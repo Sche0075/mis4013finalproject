@@ -7,24 +7,22 @@
       <tr>
         <th>ID</th>
         <th>Song Name:</th>
-        <th>Genre:</th>
+        <th>Song Length:</th>
         <th>Album Name:</th>
-        <th>Album Year:</th>
       </tr>
     </thead>
       
       <tbody>
         <?php
-          while ($abaid = $albumsbyartists->fetch_assoc()) {
+          while ($sbalid = $songsbyalbums->fetch_assoc()) {
         ?>
             <tr>
 
-                <td><?php echo $abaid['album_id']; ?></td>
-                <td><?php echo $abaid['artist_name']; ?></td> 
-                <td><?php echo $abaid['genre_name']; ?></td>
-                <td><?php echo $abaid['album_name']; ?></td>
-                <td><?php echo $abaid['album_year']; ?></td>
-                              
+                <td><?php echo $sbalid['song_id']; ?></td>
+                <td><?php echo $sbalid['song_name']; ?></td> 
+                <td><?php echo $sbalid['song_length']; ?></td>
+                <td><?php echo $sbalid['album_name']; ?></td>
+                                              
             </tr>
 
         <?php
