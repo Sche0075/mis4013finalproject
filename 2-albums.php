@@ -35,6 +35,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $albums = selectAlbums();
-include "artists/view-artists.php";
+include "albums/view-albums.php";
 include "headfoot/view-footer.php";
 ?>
