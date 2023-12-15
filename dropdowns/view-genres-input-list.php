@@ -2,7 +2,7 @@
 <?php
 while ($genresItem = $genresList->fetch_assoc()) {
   $selText = "";
-  if($selectedGenre == $genresItem['genre_id']) 
+  if($selectedRecord == $genresItem['genre_id']) {
     $selText = " selected";
   }
 ?>
