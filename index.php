@@ -3,12 +3,13 @@ $pageTitle = "Home";
 include "headfoot/view-header.php";
 ?>
 
-<div style="width:600px;margin-left:auto;margin-right:auto;margin-top:50px;display:flex;flex-direction:row;align-items:center;">
+<div style="width:300px;margin-left:auto;margin-right:auto;margin-top:50px;">
         <h1>Song Data Base</h1>
-        </br>
-        <h4>By Huston Bryan and Jameson Scheetz</h4>
 </div>
 
+<div style="width:300px;margin-left:auto;margin-right:auto;margin-top:50px;">
+        <h4>By Huston Bryan and Jameson Scheetz</h4
+</div>
 
 <head>
 <style>
