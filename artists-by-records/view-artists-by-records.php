@@ -34,3 +34,15 @@
       </tbody>
   </table>
 </div>
+
+<head>
+<style>
+body {  
+  background-image: url(imageex.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
