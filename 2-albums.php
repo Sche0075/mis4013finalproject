@@ -34,7 +34,7 @@ if (isset($_POST['actionType'])) {
   }  
 }
 
-$artists = selectArtists();
+$albums = selectAlbums();
 include "artists/view-artists.php";
 include "headfoot/view-footer.php";
 ?>
