@@ -22,7 +22,7 @@
                                         
                                     <div class="mb-3">
                                       <label for="rCeo<?php echo $record['record_id']; ?>" class="form-label">Record CEO</label>
-                                      <input type="text" class="form-control" id="rCeo<?php echo $player['record_id']; ?>" name="rCeo" value="<?php echo $record['record_ceo']; ?>">
+                                      <input type="text" class="form-control" id="rCeo<?php echo $record['record_id']; ?>" name="rCeo" value="<?php echo $record['record_ceo']; ?>">
                                     </div>
                                                                     
                                 <input type="hidden" name="rid" value="<?php echo $record['record_id']; ?>">
