@@ -23,7 +23,7 @@
                                       <label for="rid" class="form-label">Record Label</label>
 
                                       <?php
-                                      $recordList = selectRecordsforInput();
+                                      $recordsList = selectRecordsforInput();
                                       include "dropdowns/view-records-input-list.php";
                                       ?>
 
