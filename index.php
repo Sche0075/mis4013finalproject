@@ -6,7 +6,7 @@ include "headfoot/view-header.php";
 <head>
 <style>
 body {
-  background-image: url('img_girl.jpg');
+  background-image: url('imgageex.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
