@@ -19,8 +19,18 @@
                   <div class="modal-body">
                           <form method="post" action="">
                                     <div class="mb-3">
+                                      <label for="rid" class="form-label">Record Label</label>
+                                      <input type="text" class="form-control" id="rid" name="rid">
+                                    </div>
+                            
+                                    <div class="mb-3">
+                                      <label for="gid" class="form-label">Genre of Music</label>
+                                      <input type="text" class="form-control" id="gid" name="gid">
+                                    </div>
+                                    
+                                    <div class="mb-3">
                                       <label for="aName" class="form-label">Artist Name</label>
-                                      <input type="text" class="form-control" id="gName" name="gName">
+                                      <input type="text" class="form-control" id="aName" name="aName">
                                     </div>
                                         
                                     <div class="mb-3">
