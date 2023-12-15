@@ -29,7 +29,13 @@
                                 
                                     <div class="mb-3">
                                       <label for="gid<?php echo $artist['artist_id']; ?>" class="form-label">Genre:</label>
-                                      <input type="text" class="form-control" id="gid<?php echo $artist['artist_id']; ?>" name="gid" value="<?php echo $artist['genre_name']; ?>">
+      
+                                      <?php
+                                      $genresList = selectGenresforInput();
+                                      $selectedGenre = $artist['genre_name'];
+                                      include "dropdowns/view-genres-input-list.php";
+                                      ?>
+
                                     </div>                                    
                                 
                                     <div class="mb-3">
