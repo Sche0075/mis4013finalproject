@@ -60,7 +60,7 @@ function insertSongs($aid, $alid, $gid, $sName, $sLength) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `song` (`artist_id`, `album_id`, `genre_id`, `song_name`, `song_length`) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("iiiss", $aid, $alid, $gid, $alName, $alYear);
+        $stmt->bind_param("iiiss", $aid, $alid, $gid, $sName, $sLength);
         $success = $stmt->execute();
         $conn->close();
         return $success;
