@@ -52,7 +52,7 @@
               
                 <td>
                       <form method="post" action="2-songs-by-albums.php">
-                        <input type="hidden" name="alid" value="<?php echo $album['album_id']; ?>">
+                        <input type="hidden" name="sbalid" value="<?php echo $album['album_id']; ?>">
                         <button type="submit" class="btn btn-primary">Songs</button>
                       </form>
                 </td>
