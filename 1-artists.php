@@ -8,7 +8,7 @@ include "headfoot/view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-     if (insertGenres($_POST['aName'], $_POST['aHometown'])) {
+     if (insertGenres($_POST['rid'] ,$_POST['gid'], $_POST['aName'], $_POST['aHometown'])) {
        echo '<div class="alert alert-success" role="alert">Artist added.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
