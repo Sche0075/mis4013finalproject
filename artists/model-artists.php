@@ -14,11 +14,11 @@ function selectArtists() {
     }
 }
 
-function insertArtists($aName, $aHometown) {
+function insertArtists($aName, $aHometown, $rid, $gid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `artist` (`artist_name`, `artist_hometown`) VALUES (?, ?)");
-        $stmt->bind_param("ss", $aName, $aHometown);
+        $stmt = $conn->prepare("INSERT INTO `artist` (`artist_name`, `artist_hometown`, `record_id`, `genre_id`,) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssii", $aName, $aHometown, $gid, $rid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -28,11 +28,11 @@ function insertArtists($aName, $aHometown) {
     }
 }
 
-function updateArtists($aName, $aHometown, $aid) {
+function updateArtists($rid, $gid, $aName, $aHometown, $aid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `artist` set `artist_name` = ?, `artist_hometown` = ? where artist_id = ?");
-        $stmt->bind_param("ssi", $aName, $aHometown, $aid);
+        $stmt = $conn->prepare("update `artist` set `record_name` = ?, `genre_id` = ?, `artist_name` = ?, `artist_hometown` = ? where artist_id = ?");
+        $stmt->bind_param("iissi", $rid, $gid, $aName, $aHometown, $aid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
