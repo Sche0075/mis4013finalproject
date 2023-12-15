@@ -1,4 +1,4 @@
-<!-- Modal 
+
 <?php
 
 function selectAlbums() {
@@ -86,4 +86,4 @@ function deleteAlbums($alid) {
 }
 
 ?>
--->
+
