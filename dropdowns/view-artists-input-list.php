@@ -1,12 +1,12 @@
 <select class="form-select" id="aid" name="aid">
 <?php
-while ($albumsItem = $albumsList->fetch_assoc()) {
+while ($artistsItem = $artistsList->fetch_assoc()) {
   $selText = "";
-  if($selectedRecord == $genresItem['genre_id']) {
+  if($selectedArtist == $artistsItem['artist_id']) {
     $selText = " selected";
   }
 ?>
-  <option value="<?php echo $genresItem['genre_id']; ?>"<?=$selText?>><?php echo $genresItem['genre_name']; ?></option>
+  <option value="<?php echo $artistsItem['artist_id']; ?>"<?=$selText?>><?php echo $artistsItem['artist_name']; ?></option>
 <?php
 }
 ?>
