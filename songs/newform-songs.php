@@ -18,6 +18,40 @@
               </div>
                   <div class="modal-body">
                           <form method="post" action="">
+                            
+                                    <div class="mb-3">
+                                      <label for="aid" class="form-label">Artist</label>
+
+                                      <?php
+                                      $artistsList = selectArtistsforInput();
+                                      $selectedArtist = 0;
+                                      include "dropdowns/view-artists-input-list.php";
+                                      ?>
+
+                                    </div>
+
+                                    <div class="mb-3">
+                                      <label for="alid" class="form-label">Album</label>
+
+                                      <?php
+                                      $albumsList = selectAlbumsforInput();
+                                      $selectedAlbum = 0;
+                                      include "dropdowns/view-albums-input-list.php";
+                                      ?>
+
+                                    </div>
+                            
+                                    <div class="mb-3">
+                                      <label for="gid" class="form-label">Genre of Music</label>
+
+                                      <?php
+                                      $genresList = selectGenresforInput();
+                                      $selectedGenre = 0;
+                                      include "dropdowns/view-genres-input-list.php";
+                                      ?>
+
+                                    </div>
+                                    
                                     <div class="mb-3">
                                       <label for="sName" class="form-label">Song Name</label>
                                       <input type="text" class="form-control" id="sName" name="sName">
