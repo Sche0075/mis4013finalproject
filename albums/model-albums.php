@@ -74,7 +74,7 @@ function deleteAlbums($alid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from album where album_id = ?");
-        $stmt->bind_param("i", $laid);
+        $stmt->bind_param("i", $alid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
