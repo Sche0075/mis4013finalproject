@@ -1,6 +1,10 @@
 <select class="form-select" id="rid" name="rid">
 <?php
-while ($recordItem = $recordList
-  <option value="3">Three</option>
-</select>
+while ($recordsItem = $recordsList->fetch_assoc()) {
 ?>
+  <option value="<?php echo $recordsItem[`record_id`]">Three</option>
+<?php
+}
+?>
+</select>
+
