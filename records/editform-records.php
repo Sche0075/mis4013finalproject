@@ -16,7 +16,7 @@
                   <div class="modal-body">
                           <form method="post" action="">
                                     <div class="mb-3">
-                                      <label for="pName<?php echo $record['record_id']; ?>" class="form-label">Record Label Name</label>
+                                      <label for="rName<?php echo $record['record_id']; ?>" class="form-label">Record Label Name</label>
                                       <input type="text" class="form-control" id="rName<?php echo $record['record_id']; ?>" name="rName" value="<?php echo $record['record_name']; ?>">
                                     </div>
                                         
