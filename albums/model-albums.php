@@ -14,7 +14,7 @@ function selectAlbums() {
     }
 }
 
-function insertAlbumss($aName, $aHometown) {
+function insertAlbums($aName, $aHometown) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `artist` (`artist_name`, `artist_hometown`) VALUES (?, ?)");
