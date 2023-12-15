@@ -24,6 +24,16 @@
                                       <label for="aHometown<?php echo $artist['artist_id']; ?>" class="form-label">Atrist Hometown</label>
                                       <input type="text" class="form-control" id="aHometown<?php echo $artist['artist_id']; ?>" name="aHometown" value="<?php echo $artist['artist_hometown']; ?>">
                                     </div>
+
+                                    <div class="mb-3">
+                                      <label for="aHometown<?php echo $artist['artist_id']; ?>" class="form-label">Atrist Hometown</label>
+                                      <input type="text" class="form-control" id="aHometown<?php echo $artist['artist_id']; ?>" name="aHometown" value="<?php echo $artist['artist_hometown']; ?>">
+                                    </div>
+
+                                    <div class="mb-3">
+                                      <label for="aHometown<?php echo $artist['artist_id']; ?>" class="form-label">Atrist Hometown</label>
+                                      <input type="text" class="form-control" id="aHometown<?php echo $artist['artist_id']; ?>" name="aHometown" value="<?php echo $artist['artist_hometown']; ?>">
+                                    </div>
                                                                     
                                 <input type="hidden" name="aid" value="<?php echo $artist['artist_id']; ?>">
                                 <input type="hidden" name="actionType" value="Edit">
