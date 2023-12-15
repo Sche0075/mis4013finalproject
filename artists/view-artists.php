@@ -51,8 +51,8 @@
                 </td>
               
                 <td>
-                      <form method="post" action="3-artists-by-genres.php">
-                        <input type="hidden" name="aid" value="<?php echo $artist['artist_id']; ?>">
+                      <form method="post" action="1-albums-by-artists.php">
+                        <input type="hidden" name="abaid" value="<?php echo $artist['artist_id']; ?>">
                         <button type="submit" class="btn btn-primary">Artist's Albums</button>
                       </form>
                 </td>
