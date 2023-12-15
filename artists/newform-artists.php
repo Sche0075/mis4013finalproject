@@ -20,7 +20,12 @@
                           <form method="post" action="">
                                     <div class="mb-3">
                                       <label for="rid" class="form-label">Record Label</label>
-                                      <input type="text" class="form-control" id="rid" name="rid">
+                                      <?php
+
+                                      $recordList = selectRecordsforInput();
+                                      include "dropdowns/view-record-input-list.php";
+                                      ?>
+
                                     </div>
                             
                                     <div class="mb-3">
