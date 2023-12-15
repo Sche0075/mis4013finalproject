@@ -24,6 +24,7 @@
 
                                       <?php
                                       $recordsList = selectRecordsforInput();
+                                      $selectedRecord = 0;
                                       include "dropdowns/view-records-input-list.php";
                                       ?>
 
