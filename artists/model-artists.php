@@ -18,7 +18,7 @@ function insertArtists($rid, $gid, $aName, $aHometown) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `artist` (`record_id`, `genre_id`, `artist_name`, `artist_hometown`) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("iiss", $aName, $aHometown, $gid, $rid);
+        $stmt->bind_param("iiss", $gid, $rid, $aName, $aHometown);
         $success = $stmt->execute();
         $conn->close();
         return $success;
