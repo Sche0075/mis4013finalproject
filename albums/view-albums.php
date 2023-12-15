@@ -16,7 +16,7 @@
         <th>ID</th>
         <th>Album Name:</th>
         <th>Album Year:</th>
-        <th>Arist:</th>
+        <th>Artist:</th>
         <th>Genre:</th>
         <th></th>
         <th></th>
