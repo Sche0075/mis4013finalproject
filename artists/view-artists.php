@@ -1,4 +1,3 @@
-<!-- Modal 
 <div class="row">
   <div class="col">
       <h1>Artists</h1>
@@ -78,4 +77,4 @@ body {
 </style>
 </head>
 <body>
--->
+
