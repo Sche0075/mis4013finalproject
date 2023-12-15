@@ -35,7 +35,7 @@
 
                                       <?php
                                       $genresList = selectGenresforInput();
-                                      $selectedRecord = 0;
+                                      $selectedGenre = 0;
                                       include "dropdowns/view-genres-input-list.php";
                                       ?>
 
