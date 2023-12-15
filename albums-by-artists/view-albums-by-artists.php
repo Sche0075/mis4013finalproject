@@ -15,7 +15,7 @@
       
       <tbody>
         <?php
-          while ($aba = $albumsbyartists->fetch_assoc()) {
+          while ($abaid = $albumsbyartists->fetch_assoc()) {
         ?>
             <tr>
 
