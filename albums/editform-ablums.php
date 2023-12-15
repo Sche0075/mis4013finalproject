@@ -20,7 +20,7 @@
                                       <label for="aid<?php echo $album['album_id']; ?>" class="form-label">Artist Name:</label>
 
                                     <?php
-                                      $recordsList = selectAlbumsforInput();
+                                      $albumsList = selectAlbumsforInput();
                                       $selectedAlbum = $album['artist_name'];
                                       include "dropdowns/view-artists-input-list.php";
                                       ?>
