@@ -1,4 +1,4 @@
-<select class="form-select" id="rid" name="rid">
+<select class="form-select" id="rid" name="record_name">
 <?php
 while ($recordsItem = $recordsList->fetch_assoc()) {
   $selText = "";
