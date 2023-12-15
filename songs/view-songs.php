@@ -13,7 +13,8 @@
     
     <thead>
       <tr>
-      
+        <th> </th>
+        <th>ID:</th>
         <th>Song Name:</th>
         <th>Song Length:</th>
         <th>Artist:</th>
@@ -43,7 +44,7 @@
                         </button>
                       </form>
                 </td>
-
+                <td><?php echo $song['song_id']; ?></td>
                 <td><?php echo $song['song_name']; ?></td> 
                 <td><?php echo $song['song_length']; ?></td>
                 <td><?php echo $song['artist_name']; ?></td>
