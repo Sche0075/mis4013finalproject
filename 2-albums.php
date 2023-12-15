@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("artists/model-artists.php");
+require_once("albums/model-albums.php");
 
 $pageTitle = "Artists";
 include "headfoot/view-header.php";
@@ -8,15 +8,15 @@ include "headfoot/view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
-     if (insertArtists($_POST['rid'] ,$_POST['gid'], $_POST['aName'], $_POST['aHometown'])) {
-       echo '<div class="alert alert-success" role="alert">Artist added.</div>';
+     if (insertAlbums($_POST['aid'] ,$_POST['gid'], $_POST['alName'], $_POST['alYear'])) {
+       echo '<div class="alert alert-success" role="alert">Album added.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
         break;    
 
     case "Edit":
-     if (updateArtists($_POST['rid'] ,$_POST['gid'], $_POST['aName'], $_POST['aHometown'], $_POST['aid'])) {
+     if (updateAlbums($_POST['aid'] ,$_POST['gid'], $_POST['alName'], $_POST['alYear'], $_POST['alid'])) {
        echo '<div class="alert alert-success" role="alert">Artist edited.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
@@ -24,8 +24,8 @@ if (isset($_POST['actionType'])) {
         break;    
    
     case "Delete":
-     if (deleteArtists($_POST['aid'])) {
-       echo '<div class="alert alert-success" role="alert">Artist deleted.</div>';
+     if (deleteAlbums($_POST['alid'])) {
+       echo '<div class="alert alert-success" role="alert">Album deleted.</div>';
      } else {
        echo '<div class="alert alert-danger" role="alert">Error.</div>';
      }
