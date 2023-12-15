@@ -8,7 +8,7 @@
   </button>
 </div>
   
-<!-- Modal -->
+
 <div class="modal fade" id="newAlbumModal" tabindex="-1" aria-labelledby="newAlbumModalLabel" aria-hidden="true">
    <div class="modal-dialog">
         <div class="modal-content">
