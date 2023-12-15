@@ -15,16 +15,48 @@
               </div>
                   <div class="modal-body">
                           <form method="post" action="">
+                                
                                     <div class="mb-3">
-                                      <label for="sName<?php echo $song['song_id']; ?>" class="form-label">Song Name</label>
+                                      <label for="aid<?php echo $song['song_id']; ?>" class="form-label">Artist Name:</label>
+
+                                    <?php
+                                      $artistsList = selectArtistsforInput();
+                                      $selectedArtist = $song['artist_name'];
+                                      include "dropdowns/view-artists-input-list.php";
+                                      ?>
+
+                                    <div class="mb-3">
+                                      <label for="alid<?php echo $song['song_id']; ?>" class="form-label">Album Name:</label>
+
+                                    <?php
+                                      $albumsList = selectAlbumsforInput();
+                                      $selectedAlbum = $song['album_name'];
+                                      include "dropdowns/view-albums-input-list.php";
+                                      ?>
+                                          
+                                    </div>
+                                
+                                    <div class="mb-3">
+                                      <label for="gid<?php echo $song['album_id']; ?>" class="form-label">Genre:</label>
+      
+                                      <?php
+                                      $genresList = selectGenresforInput();
+                                      $selectedGenre = $song['genre_name'];
+                                      include "dropdowns/view-genres-input-list.php";
+                                      ?>
+
+                                    </div>                                    
+                                
+                                    <div class="mb-3">
+                                      <label for="sName<?php echo $song['song_id']; ?>" class="form-label">Song Name:</label>
                                       <input type="text" class="form-control" id="sName<?php echo $song['song_id']; ?>" name="sName" value="<?php echo $song['song_name']; ?>">
                                     </div>
                                         
                                     <div class="mb-3">
-                                      <label for="sLength<?php echo $song['song_id']; ?>" class="form-label">Song Length</label>
-                                      <input type="text" class="form-control" id="sLength<?php echo $song['song_id']; ?>" name="sLength" value="<?php echo $song['song_length']; ?>">
+                                      <label for="sLength<?php echo $song['song_id']; ?>" class="form-label">Song Length:</label>
+                                      <input type="text" class="form-control" id="sLength<?php echo $song['song_id']; ?>" name="sLength" value="<?php echo $song['song_legth']; ?>">
                                     </div>
-                                                                    
+                                                                                                     
                                 <input type="hidden" name="sid" value="<?php echo $song['song_id']; ?>">
                                 <input type="hidden" name="actionType" value="Edit">
                               <button type="submit" class="btn btn-primary">Save</button>
