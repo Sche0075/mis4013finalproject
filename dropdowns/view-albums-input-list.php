@@ -1,4 +1,4 @@
-<select class="form-select" id="sid" name="sid">
+<select class="form-select" id="alid" name="alid">
 <?php
 while ($albumsItem = $albumsList->fetch_assoc()) {
   $selText = "";
