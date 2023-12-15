@@ -1,9 +1,9 @@
 <?php
 
-function selectArtists() {
+function selectAlbums() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT a.artist_id, a.artist_name, a.artist_hometown, r.record_name, g.genre_name FROM record r JOIN artist a ON a.record_id = r.record_id JOIN genre g ON g.genre_id = a.genre_id");
+        $stmt = $conn->prepare("SELECT al.album_id, a.artist_name, g.genre_name, al.album_name, al.album_year FROM artist a JOIN album al ON al.artist_id = a.artist_id JOIN genre g ON g.genre_id = al.genre_id WHERE a.artist_id = ?");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -14,10 +14,10 @@ function selectArtists() {
     }
 }
 
-function selectRecordsforInput() {
+function selectArtistsforInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT record_id, record_name FROM `record` order by record_name");
+        $stmt = $conn->prepare("SELECT artist_id, artist_name FROM `artist` order by artist_name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -42,11 +42,11 @@ function selectGenresforInput() {
     }
 }
 
-function insertArtists($rid, $gid, $aName, $aHometown) {
+function insertAlbums($aid, $gid, $alName, $alYear) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `artist` (`record_id`, `genre_id`, `artist_name`, `artist_hometown`) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("iiss", $gid, $rid, $aName, $aHometown);
+        $stmt = $conn->prepare("INSERT INTO `album` (`artist_id`, `genre_id`, `album_name`, `album_year`) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("iiss", $aid, $gid, $alName, $alYear);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -56,11 +56,11 @@ function insertArtists($rid, $gid, $aName, $aHometown) {
     }
 }
 
-function updateArtists($rid, $gid, $aName, $aHometown, $aid) {
+function updateAlbums($aid, $gid, $alName, $alYear, $alid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `artist` set `record_id` = ?, `genre_id` = ?, `artist_name` = ?, `artist_hometown` = ? where artist_id = ?");
-        $stmt->bind_param("iissi", $rid, $gid, $aName, $aHometown, $aid);
+        $stmt = $conn->prepare("update `album` set `artist_id` = ?, `genre_id` = ?, `album_name` = ?, `album_year` = ? where album_id = ?");
+        $stmt->bind_param("iissi", $aid, $gid, $alName, $alYear, $alid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -70,11 +70,11 @@ function updateArtists($rid, $gid, $aName, $aHometown, $aid) {
     }
 }
 
-function deleteArtists($aid) {
+function deleteAlbums($alid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from artist where artist_id = ?");
-        $stmt->bind_param("i", $aid);
+        $stmt = $conn->prepare("delete from album where album_id = ?");
+        $stmt->bind_param("i", $laid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
