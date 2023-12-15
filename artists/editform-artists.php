@@ -18,7 +18,13 @@
                                 
                                     <div class="mb-3">
                                       <label for="rid<?php echo $artist['artist_id']; ?>" class="form-label">Record Label:</label>
-                                      <input type="text" class="form-control" id="rid<?php echo $artist['artist_id']; ?>" name="rid" value="<?php echo $artist['record_name']; ?>">
+
+                                    <?php
+                                      $recordsList = selectRecordsforInput();
+                                      $selectedRecord = 0;
+                                      include "dropdowns/view-records-input-list.php";
+                                      ?>
+                                          
                                     </div>
                                 
                                     <div class="mb-3">
