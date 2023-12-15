@@ -1,4 +1,4 @@
-<!-- Button trigger modal 
+<!-- Button trigger modal -->
 <div style="height:16px;width:16px;margin-right:70px;margin-top:30px;">
   <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#newArtistModal">
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-folder-plus" viewBox="0 0 16 16">
@@ -58,4 +58,3 @@
         </div> 
   </div> 
 </div>
--->
