@@ -1,4 +1,4 @@
-<h1>Genre Artists</h1>
+<h1>Artist's Albums</h1>
 <h5>(To edit these you must return to the Albums tab)</h5>
 <div class="table-responsive">
   <table class="table">
