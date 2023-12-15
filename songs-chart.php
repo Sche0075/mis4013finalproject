@@ -2,7 +2,7 @@
 require_once("util-db.php");
 require_once("charts/model-songs-charts.php");
 
-$pageTitle = "Songs Chart";
+$pageTitle = "Songs Chart by Genre";
 include "headfoot/view-header.php"
 
 $songs = selectSongs();
