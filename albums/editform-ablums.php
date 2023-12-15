@@ -15,16 +15,39 @@
               </div>
                   <div class="modal-body">
                           <form method="post" action="">
+                                
                                     <div class="mb-3">
-                                      <label for="aName<?php echo $artist['artist_id']; ?>" class="form-label">Artist Name</label>
+                                      <label for="rid<?php echo $artist['artist_id']; ?>" class="form-label">Record Label:</label>
+
+                                    <?php
+                                      $recordsList = selectRecordsforInput();
+                                      $selectedRecord = $artist['record_name'];
+                                      include "dropdowns/view-records-input-list.php";
+                                      ?>
+                                          
+                                    </div>
+                                
+                                    <div class="mb-3">
+                                      <label for="gid<?php echo $artist['artist_id']; ?>" class="form-label">Genre:</label>
+      
+                                      <?php
+                                      $genresList = selectGenresforInput();
+                                      $selectedGenre = $artist['genre_name'];
+                                      include "dropdowns/view-genres-input-list.php";
+                                      ?>
+
+                                    </div>                                    
+                                
+                                    <div class="mb-3">
+                                      <label for="aName<?php echo $artist['artist_id']; ?>" class="form-label">Artist Name:</label>
                                       <input type="text" class="form-control" id="aName<?php echo $artist['artist_id']; ?>" name="aName" value="<?php echo $artist['artist_name']; ?>">
                                     </div>
                                         
                                     <div class="mb-3">
-                                      <label for="aHometown<?php echo $artist['artist_id']; ?>" class="form-label">Atrist Hometown</label>
+                                      <label for="aHometown<?php echo $artist['artist_id']; ?>" class="form-label">Atrist Hometown:</label>
                                       <input type="text" class="form-control" id="aHometown<?php echo $artist['artist_id']; ?>" name="aHometown" value="<?php echo $artist['artist_hometown']; ?>">
                                     </div>
-                                                                    
+                                                                                                     
                                 <input type="hidden" name="aid" value="<?php echo $artist['artist_id']; ?>">
                                 <input type="hidden" name="actionType" value="Edit">
                               <button type="submit" class="btn btn-primary">Save</button>
