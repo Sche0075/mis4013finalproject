@@ -6,7 +6,7 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Album Name:</th>
+        <th>Artist Name:</th>
         <th>Genre:</th>
         <th>Album Name:</th>
         <th>Album Year:</th>
