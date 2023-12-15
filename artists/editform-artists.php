@@ -21,7 +21,7 @@
 
                                     <?php
                                       $recordsList = selectRecordsforInput();
-                                      $selectedRecord = $artist['record_id'];
+                                      $selectedRecord = $artist['record_name'];
                                       include "dropdowns/view-records-input-list.php";
                                       ?>
                                           
