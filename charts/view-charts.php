@@ -1,5 +1,11 @@
 <div style="display:flex;justify-content: center;align-items: center;">
+</br>
+</br>
+</br>
   <h1>This is the breakdown of the Genres and the amount of Songs they contain</h1>
+</br>
+</br>
+</br>
 </div>
 
 <style>
