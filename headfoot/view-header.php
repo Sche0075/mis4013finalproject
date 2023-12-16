@@ -40,10 +40,10 @@
                         <a class="nav-link" href="5-records.php" style="color: white;">Record Labels</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="charts.php" style="color: white;">Stats for DataBase</a>
+                        <a class="nav-link" href="charts.php" style="color: white;">Genre-Song Breakdown</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="charts2.php" style="color: white;">Stats for DataBase</a>
+                        <a class="nav-link" href="charts2.php" style="color: white;">Genre-Artist Breakdown</a>
                       </li>
                 </ul>
               </div>
