@@ -47,7 +47,7 @@
           <?php
             $genres = selectchartGenres();
             while ($genre = $genres->fetch_assoc()) {
-              echo $genre['count_song'] . ', ';
+              echo $genre['count_artist'] . ', ';
             }
           ?>
         ],
