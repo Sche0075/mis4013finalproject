@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* 100% of the viewport height */
+    height: 50vh; /* 100% of the viewport height */
   }
 </style>
 
