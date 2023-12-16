@@ -4,5 +4,5 @@
 while ($genre = $genres->fetch_assoc()) {
   
   }
-    ?>
+  ?>
 
