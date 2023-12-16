@@ -23,7 +23,7 @@
         label: '# of Songs',
         data: [
           <?php
-            $genres = selectchartGenres;
+            $genres = selectGenres;
             while ($genre = $genres->fetch_assoc()) {
               echo "'" . $genre['count_songs'] . ", ";
             }
