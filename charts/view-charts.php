@@ -21,14 +21,13 @@
       datasets: [{
         label: '# of Songs',
         data: [
-          
-          <?php
-            $genres = selectchartGenres();
-            while ($genre = $genres->fetch_assoc()) {
-              echo "'" . $genre['count_song'] . ", ";
-            }
-            ?>
-        ],
+                <?php
+                  $genres = selectchartGenres();
+                  while ($genre = $genres->fetch_assoc()) {
+                    echo $genre['count_song'] . ', ';
+                  }
+                ?>
+              ],
         borderWidth: 1
       }]
     },
