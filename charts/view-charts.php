@@ -1,13 +1,19 @@
 <style>
-  #chartContainer {
+  body {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh; /* 100% of the viewport height */
+    height: 50vh;
+  }
+
+  #Chart1 {
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
   }
 </style>
 
-<div id="chartContainer">
+<div>
   <canvas id="Chart1"></canvas>
 </div>
 
