@@ -42,6 +42,9 @@
                       <li class="nav-item">
                         <a class="nav-link" href="charts.php" style="color: white;">Stats for DataBase</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="charts2.php" style="color: white;">Stats for DataBase</a>
+                      </li>
                 </ul>
               </div>
           </div>
