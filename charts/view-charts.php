@@ -1,19 +1,18 @@
 <style>
-  body {
-    margin: 0;
+  #chartContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 50vh; /* Adjust the height as needed */
   }
 
   #Chart1 {
-    width: 50%; /* Adjust the width as needed */
-    height: auto;
+    width: 80%; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
   }
 </style>
 
-<div>
+<div id="chartContainer">
   <canvas id="Chart1"></canvas>
 </div>
 
