@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("charts2/model-charts2.php");
+require_once("charts/model-charts2.php");
 
 $pageTitle = "Charts";
 include "headfoot/view-header.php";
