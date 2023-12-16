@@ -14,7 +14,7 @@
     type: 'bar',
     data: {
       labels: [
-        <?php
+          <?php
             while ($genre = $genres->fetch_assoc()) {
               echo "'" . $genre['genre_name'] . "', ";
             }
