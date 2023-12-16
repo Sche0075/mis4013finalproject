@@ -8,7 +8,7 @@
 
 
 <script>
-  const ctx = document.getElementById('myChart');
+  const ctx = document.getElementById('Chart1');
 
   new Chart(ctx, {
     type: 'bar',
