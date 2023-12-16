@@ -12,5 +12,5 @@ function selectchartGenres() {
         $conn->close();
         throw $e;
     }
-}
+};
 ?>
