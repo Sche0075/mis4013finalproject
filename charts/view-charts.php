@@ -1,3 +1,7 @@
+<div style="display:flex;justify-content: center;align-items: center;">
+  <h1>This is the breakdown of the Genres and the amount of Songs they contain</h1>
+</div>
+
 <style>
   #chartContainer {
     display: flex;
