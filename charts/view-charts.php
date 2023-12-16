@@ -16,7 +16,7 @@
       labels: [
         <?php
             while ($genre = $genres->fetch_assoc()) {
-              echo $genre['genre_name'] . ", ";
+              echo "'" . $genre['genre_name'] . "', ";
             }
             ?>],
       datasets: [{
@@ -25,7 +25,7 @@
           <?php
             $genres = selectGenres
             while ($genre = $genres->fetch_assoc()) {
-              echo $genre['count_songs'] . ", ";
+              echo "'" . $genre['count_songs'] . ", ";
             }
             ?>
         ],
