@@ -25,7 +25,7 @@
           <?php
             $genres = selectGenres;
             while ($genre = $genres->fetch_assoc()) {
-              echo "'" . $genre['count_songs'] . ", ";
+              echo "'" . $genre['count_song'] . ", ";
             }
             ?>
         ],
